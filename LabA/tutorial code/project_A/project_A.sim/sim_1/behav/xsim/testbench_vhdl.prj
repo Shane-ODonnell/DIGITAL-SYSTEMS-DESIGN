@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_A.gen/sources_1/ip/sine_low/sim/sine_low.vhd" \
+"../../../../project_A.gen/sources_1/ip/sine_mid/sim/sine_mid.vhd" \
+"../../../../project_A.gen/sources_1/ip/sine_high/sim/sine_high.vhd" \
+"../../../../../debounce.vhd" \
+"../../../../../fsm.vhd" \
+"../../../../../sinegen.vhd" \
+"../../../../../sinegen_demo.vhd" \
+
+# Do not sort compile order
+nosort
