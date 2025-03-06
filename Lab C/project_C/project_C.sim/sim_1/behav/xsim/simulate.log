@@ -1,6 +1,6 @@
 Time resolution is 1 ps
 Time=0 | x=000001, y=000100, sel=0 -> sum=000101, c_out=0, overflow=0
-Time=10000 | x=000000, y=000000, sel=0 -> sum=000000, c_out=0, overflow=0
+Time=10000 | x=000000, y=000000, sel=1 -> sum=000000, c_out=1, overflow=0
 Time=20000 | x=011111, y=000001, sel=1 -> sum=011110, c_out=1, overflow=0
 Time=30000 | x=100000, y=111111, sel=0 -> sum=011111, c_out=1, overflow=1
 Time=40000 | x=110000, y=110000, sel=1 -> sum=000000, c_out=1, overflow=0
