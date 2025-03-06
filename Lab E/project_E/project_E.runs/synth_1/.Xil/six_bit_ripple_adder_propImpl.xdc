@@ -37,3 +37,7 @@ set_property src_info {type:XDC file:1 line:55 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN W18 [get_ports {sum[4]}]
 set_property src_info {type:XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U15 [get_ports {sum[5]}]
+set_property src_info {type:XDC file:1 line:62 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U14 [get_ports {c_out}]
+set_property src_info {type:XDC file:1 line:65 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V14 [get_ports {overflow}]

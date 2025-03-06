@@ -56,10 +56,14 @@ set_property PACKAGE_PIN W18 [get_ports {sum[4]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {sum[4]}]
 set_property PACKAGE_PIN U15 [get_ports {sum[5]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {sum[5]}]
-#set_property PACKAGE_PIN U14 [get_ports {led[6]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {led[6]}]
-#set_property PACKAGE_PIN V14 [get_ports {led[7]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {led[7]}]
+	
+    #set_property PACKAGE_PIN T14 [get_ports {overflow}]; # LED7
+    
+set_property PACKAGE_PIN U14 [get_ports {c_out}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {c_out}]
+#
+set_property PACKAGE_PIN V14 [get_ports {overflow}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {overflow}]
 #set_property PACKAGE_PIN V13 [get_ports {led[8]}]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports {led[8]}]
 #set_property PACKAGE_PIN V3 [get_ports {led[9]}]					
