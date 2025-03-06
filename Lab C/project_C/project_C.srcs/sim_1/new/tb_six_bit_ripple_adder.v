@@ -47,7 +47,7 @@ module tb_six_bit_ripple_adder; //declare tha testbench module
         #10;
 
         // test 2: 0 + 0
-        x = 6'b00_0000; y = 6'b00_0000; sel = 0;
+        x = 6'b00_0000; y = 6'b00_0000; sel = 1;
         #10;
 
         // test 3: 31 - 1 (Overflow Case)
