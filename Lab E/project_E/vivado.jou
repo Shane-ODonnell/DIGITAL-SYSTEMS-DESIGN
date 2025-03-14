@@ -1,72 +1,16 @@
 #-----------------------------------------------------------
-# Vivado v2023.2_AR000036317 (64-bit)
+# Vivado v2023.2 (64-bit)
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Mar  6 18:12:33 2025
-# Process ID: 19184
-# Current directory: C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22156 C:\Users\SODONNE8\Documents\GitHub\DIGITAL-SYSTEMS-DESIGN\Lab E\project_E\project_E.xpr
-# Log file: C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/vivado.log
-# Journal file: C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E\vivado.jou
-# Running On: TCD-CNH4NX2, OS: Windows, CPU Frequency: 3312 MHz, CPU Physical cores: 6, Host memory: 34187 MB
+# Start of session at: Fri Mar  7 16:00:40 2025
+# Process ID: 30880
+# Current directory: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17544 C:\Users\shane\Documents\DIGITAL-SYSTEMS-DESIGN\Lab E\project_E\project_E.xpr
+# Log file: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/vivado.log
+# Journal file: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E\vivado.jou
+# Running On: ShanesDELL, OS: Windows, CPU Frequency: 1882 MHz, CPU Physical cores: 10, Host memory: 16782 MB
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.xpr}
+open_project {C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.xpr}
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-wait_on_run synth_1
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-wait_on_run synth_1
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/impl_1/six_bit_ripple_adder.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-open_run impl_1
-report_utilization -name utilization_1
