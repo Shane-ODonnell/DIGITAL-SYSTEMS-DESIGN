@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Time=0 | A=000101, B=010011, fxn=000 -> X=000101
+Time=10000 | A=000101, B=010011, fxn=001 -> X=010011
+Time=20000 | A=000101, B=010011, fxn=010 -> X=111011
+Time=30000 | A=000101, B=010011, fxn=011 -> X=101101
+Time=40000 | A=000101, B=010011, fxn=100 -> X=000001
+Time=50000 | A=000101, B=010011, fxn=101 -> X=101001
+Time=60000 | A=000101, B=010011, fxn=110 -> X=011000
+Time=70000 | A=000101, B=010011, fxn=111 -> X=110010
+$finish called at time : 80 ns : File "C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 1/Mini-ALU/Mini-ALU.srcs/sim_1/new/tb_mini_alu.v" Line 73

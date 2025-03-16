@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../Lab E/full_adder.v" \
+"../../../../Mini-ALU.srcs/sources_1/new/mini_alu.v" \
+"../../../../../../Lab E/six_bit_ripple_adder.v" \
+"../../../../Mini-ALU.srcs/sim_1/new/tb_mini_alu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
