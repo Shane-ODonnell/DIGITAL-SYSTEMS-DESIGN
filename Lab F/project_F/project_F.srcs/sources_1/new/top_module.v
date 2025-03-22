@@ -35,7 +35,6 @@ module top_module(
         .temp(Q),       
         .anode_select (anode_sel),
         .LED_out(led_out)
-       
     );
     
     debouncer db (
@@ -48,10 +47,10 @@ module top_module(
     always @(*) begin
         if (buttons[4])                                         // CENTER button if the CENTRE switch is pressed. 
             Q_next = 8'd22;                                     //load a value of decimal 22, 
-        else if (buttons[0] || buttons[3])                      // if UP or RIGHT = 1
-                Q_next = Q + 1;                                     // increment Q to get Q_next;
-        else if (buttons[1] || buttons[2])                      // if LEFT or DOWN
-            Q_next = Q - 1;                                          //  decrement Q to get Q_next
+        else if ((buttons[0] || buttons[3]) && Q < 127)                      // if UP or RIGHT = 1
+                    Q_next = Q + 1;                                     // increment Q to get Q_next;
+        else if ((buttons[1] || buttons[2]) && Q >= 1)                      // if LEFT or DOWN
+               Q_next = Q - 1;                                          //  decrement Q to get Q_next
         else
             Q_next = Q;                                         // No change if no button pressed
     end
