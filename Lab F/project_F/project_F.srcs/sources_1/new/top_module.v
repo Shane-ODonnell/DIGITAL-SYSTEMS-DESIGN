@@ -20,7 +20,7 @@ module top_module(
     wire [7:0] Q;
     reg [7:0] Q_next;
     
-    d_ff_reset dff0(.clk(clk),.reset(reset),.d(Q_next[0]),.q(Q[0]));   
+    d_ff_reset dff0(.clk(clk),.reset(reset),.d(Q_next[0]),.q(Q[0]));   //instantiate 8 instances of d flipflops
     d_ff_reset dff1(.clk(clk),.reset(reset),.d(Q_next[1]),.q(Q[1]));
     d_ff_reset dff2(.clk(clk),.reset(reset),.d(Q_next[2]),.q(Q[2]));   
     d_ff_reset dff3(.clk(clk),.reset(reset),.d(Q_next[3]),.q(Q[3]));   
@@ -29,7 +29,7 @@ module top_module(
     d_ff_reset dff6(.clk(clk),.reset(reset),.d(Q_next[6]),.q(Q[6]));              
     d_ff_reset dff7(.clk(clk),.reset(reset),.d(Q_next[7]),.q(Q[7]));
     
-    seven_segment_controller ss(
+    seven_segment_controller ss(//instantiate the 7segment displaz middle man
         .clk(clk),
         .reset(reset),
         .temp(Q),       
@@ -37,7 +37,7 @@ module top_module(
         .LED_out(led_out)
     );
     
-    debouncer db (
+    debouncer db ( //ready the debouncer
         .clk(clk),
         .reset(reset),
         .button_in(button_input),
@@ -47,9 +47,9 @@ module top_module(
     always @(*) begin
         if (buttons[4])                                         // CENTER button if the CENTRE switch is pressed. 
             Q_next = 8'd22;                                     //load a value of decimal 22, 
-        else if ((buttons[0] || buttons[3]) && Q < 127)                      // if UP or RIGHT = 1
+        else if ((buttons[0] || buttons[3]) && Q < 127)                      // if UP or RIGHT and not 127 = 1
                     Q_next = Q + 1;                                     // increment Q to get Q_next;
-        else if ((buttons[1] || buttons[2]) && Q >= 1)                      // if LEFT or DOWN
+        else if ((buttons[1] || buttons[2]) && Q >= 1)                      // if LEFT or DOWN and not 0
                Q_next = Q - 1;                                          //  decrement Q to get Q_next
         else
             Q_next = Q;                                         // No change if no button pressed
