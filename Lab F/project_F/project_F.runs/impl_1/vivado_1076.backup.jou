@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Mar 22 17:00:21 2025
+# Process ID: 1076
+# Current directory: C:/Users/sodonne8/Desktop/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab F/project_F/project_F.runs/impl_1
+# Command line: vivado.exe -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
+# Log file: C:/Users/sodonne8/Desktop/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab F/project_F/project_F.runs/impl_1/top_module.vdi
+# Journal file: C:/Users/sodonne8/Desktop/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab F/project_F/project_F.runs/impl_1\vivado.jou
+# Running On        :LG25-C7097F3
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz
+# CPU Frequency     :2904 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16881 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19431 MB
+# Available Virtual :7632 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace

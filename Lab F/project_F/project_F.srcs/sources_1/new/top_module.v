@@ -13,7 +13,7 @@ module top_module(
     input clk, reset,
     input [4:0] button_input,//5 bit button input
     output [3:0] anode_sel, 
-    output [7:0] led_out // 7 bit LED output 
+    output [6:0] led_out // 7 bit LED output 
     );
     
     wire [4:0] buttons;
@@ -33,8 +33,9 @@ module top_module(
         .clk(clk),
         .reset(reset),
         .temp(Q),       
-        .led_out(led_out),
-        .anode_sel(anode_sel)
+        .anode_select (anode_sel),
+        .LED_out(led_out)
+       
     );
     
     debouncer db (
