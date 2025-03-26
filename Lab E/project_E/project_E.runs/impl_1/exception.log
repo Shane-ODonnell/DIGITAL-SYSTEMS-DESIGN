@@ -1,4 +1,0 @@
-ERROR: Exception caught trying to open file C:\Users\SODONNE8\Documents\GitHub\DIGITAL-SYSTEMS-DESIGN\Lab E\project_E\project_E.runs\impl_1/runme.log
-	Exception name: Error
-	Exception error code: 70
-	Exception message: Permission denied

@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Mar  7 16:00:40 2025
-# Process ID: 30880
+# Start of session at: Sun Mar 16 15:34:54 2025
+# Process ID: 26356
 # Current directory: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17544 C:\Users\shane\Documents\DIGITAL-SYSTEMS-DESIGN\Lab E\project_E\project_E.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25708 C:\Users\shane\Documents\DIGITAL-SYSTEMS-DESIGN\Lab E\project_E\project_E.xpr
 # Log file: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/vivado.log
 # Journal file: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E\vivado.jou
 # Running On: ShanesDELL, OS: Windows, CPU Frequency: 1882 MHz, CPU Physical cores: 10, Host memory: 16782 MB
@@ -14,3 +14,18 @@
 start_gui
 open_project {C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.xpr}
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/impl_1/six_bit_ripple_adder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/impl_1/six_bit_ripple_adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

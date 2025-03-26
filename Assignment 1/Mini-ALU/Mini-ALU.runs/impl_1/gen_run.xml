@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1742135856">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1742164553">
   <File Type="ROUTE-PWR" Name="mini_alu_power_routed.rpt"/>
   <File Type="PA-TCL" Name="mini_alu.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="mini_alu_power_summary_routed.pb"/>

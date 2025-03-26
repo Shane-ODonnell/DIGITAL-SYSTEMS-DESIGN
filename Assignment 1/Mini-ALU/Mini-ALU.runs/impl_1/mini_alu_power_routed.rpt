@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Sun Mar 16 14:39:46 2025
+| Date             : Sun Mar 16 22:40:50 2025
 | Host             : ShanesDELL running 64-bit major release  (build 9200)
 | Command          : report_power -file mini_alu_power_routed.rpt -pb mini_alu_power_summary_routed.pb -rpx mini_alu_power_routed.rpx
 | Design           : mini_alu
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 10.306       |
+| Total On-Chip Power (W)  | 10.786       |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 10.162       |
-| Device Static (W)        | 0.145        |
+| Dynamic (W)              | 10.633       |
+| Device Static (W)        | 0.153        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 33.5         |
-| Junction Temperature (C) | 76.5         |
+| Max Ambient (C)          | 31.1         |
+| Junction Temperature (C) | 78.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.134 |       36 |       --- |             --- |
-|   LUT as Logic |     0.134 |       28 |     20800 |            0.13 |
-| Signals        |     0.234 |       51 |       --- |             --- |
-| I/O            |     9.794 |       21 |       106 |           19.81 |
-| Static Power   |     0.145 |          |           |                 |
-| Total          |    10.306 |          |           |                 |
+| Slice Logic    |     0.117 |       34 |       --- |             --- |
+|   LUT as Logic |     0.111 |       24 |     20800 |            0.12 |
+|   F7/F8 Muxes  |     0.005 |        5 |     32600 |            0.02 |
+| Signals        |     0.248 |       39 |       --- |             --- |
+| I/O            |    10.269 |       21 |       106 |           19.81 |
+| Static Power   |     0.153 |          |           |                 |
+| Total          |    10.786 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,9 +68,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.497 |       0.428 |      0.069 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.376 |       0.357 |      0.019 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     2.756 |       2.755 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.500 |       0.424 |      0.076 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.394 |       0.374 |      0.020 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     2.891 |       2.890 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -134,7 +135,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| mini_alu |    10.162 |
+| mini_alu |    10.633 |
 +----------+-----------+
 
 

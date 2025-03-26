@@ -27,7 +27,7 @@ module mini_alu(
     output reg [5:0] X      //6 bit output
     );
     
-    wire [5:0] sum, diff; //internal signals
+    wire [5:0] sum, diff, compA, compB; //internal signals
     wire carry_out, overflow;
     
      //initalise 2 instances of ripple adders (1 add 1 sub
@@ -48,14 +48,31 @@ module mini_alu(
     .c_out(),       // not needed for sub
     .overflow()     // Ignore overflow for sub
     );
+
+    six_bit_ripple_adder twosComplimentA (.x(6'b0),
+    .y(A),
+    .sel(1'b1),
+    .sum(compA),
+    .c_out(),
+    .overflow()     // Ignore overflow for sub
+    );
+    
+    six_bit_ripple_adder twosComplimentB (
+    .x(6'b0),        //set x = 0
+    .y(B),          //set y= B
+    .sel(1'b1),     // 1 for subtraction
+    .sum(compB),    //subtract b from 0 to get twos compliment of B
+    .c_out(),       // not needed for sub
+    .overflow()     // Ignore overflow for sub
+    );
     
     //function sel for ALU
     always @(*) begin
         case (fxn)
             3'b000: X = A;                // Pass A
             3'b001: X = B;                // Pass B
-            3'b010: X = ~A + 1;           // Two's complement of A (-A)
-            3'b011: X = ~B + 1;           // Two's complement of B (-B)
+            3'b010: X = compA;           // Two's complement of A (-A)
+            3'b011: X = compB;           // Two's complement of B (-B)
             3'b100: X = (A < B) ? 6'b000001 : 6'b000000; // A < B
             3'b101: X = A ~^ B;           // Bitwise XNOR
             3'b110: X = sum;              // Addition (A + B)

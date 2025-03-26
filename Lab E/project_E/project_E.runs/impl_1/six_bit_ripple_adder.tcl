@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/impl_1/six_bit_ripple_adder.tcl"
+  variable script "C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/impl_1/six_bit_ripple_adder.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,8 +123,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
-  set_param xicom.use_bs_reader 1
-  set_param runs.launchOptions { -jobs 12  }
+  set_param runs.launchOptions { -jobs 6  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
@@ -132,15 +131,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1/six_bit_ripple_adder.dcp}}
+  add_files -quiet {{C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1/six_bit_ripple_adder.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/adder.xdc}}
+  read_xdc {{C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/adder.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

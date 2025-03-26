@@ -125,7 +125,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 3
   set_param xicom.use_bs_reader 1
-  set_param runs.launchOptions { -jobs 6  }
+  set_param runs.launchOptions { -jobs 12  }
   open_checkpoint mini_alu_routed.dcp
   set_property webtalk.parent_dir {C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 1/Mini-ALU/Mini-ALU.cache/wt} [current_project]
 set_property TOP mini_alu [current_fileset]

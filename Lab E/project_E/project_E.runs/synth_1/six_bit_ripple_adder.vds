@@ -1,86 +1,87 @@
 #-----------------------------------------------------------
-# Vivado v2023.2_AR000036317 (64-bit)
+# Vivado v2023.2 (64-bit)
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Mar  6 19:01:37 2025
-# Process ID: 3972
-# Current directory: C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1
+# Start of session at: Sun Mar 16 15:35:58 2025
+# Process ID: 9388
+# Current directory: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1
 # Command line: vivado.exe -log six_bit_ripple_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source six_bit_ripple_adder.tcl
-# Log file: C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1/six_bit_ripple_adder.vds
-# Journal file: C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1\vivado.jou
-# Running On: TCD-CNH4NX2, OS: Windows, CPU Frequency: 3312 MHz, CPU Physical cores: 6, Host memory: 34187 MB
+# Log file: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1/six_bit_ripple_adder.vds
+# Journal file: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1\vivado.jou
+# Running On: ShanesDELL, OS: Windows, CPU Frequency: 1882 MHz, CPU Physical cores: 10, Host memory: 16782 MB
 #-----------------------------------------------------------
 source six_bit_ripple_adder.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 463.992 ; gain = 184.004
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.srcs/utils_1/imports/synth_1/six_bit_ripple_adder.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.srcs/utils_1/imports/synth_1/six_bit_ripple_adder.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 454.516 ; gain = 186.934
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.srcs/utils_1/imports/synth_1/six_bit_ripple_adder.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.srcs/utils_1/imports/synth_1/six_bit_ripple_adder.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top six_bit_ripple_adder -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+WARNING: [Vivado_Tcl 4-1809] The reference checkpoint is from an old version of Vivado; A full resynthesis flow will be run
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1904
+INFO: [Synth 8-7075] Helper process launched with PID 18796
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1299.645 ; gain = 441.270
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1288.711 ; gain = 440.875
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'six_bit_ripple_adder' [C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/six_bit_ripple_adder.v:22]
-INFO: [Synth 8-6157] synthesizing module 'FullAdder' [C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/full_adder.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'FullAdder' (0#1) [C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/full_adder.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'six_bit_ripple_adder' (0#1) [C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/six_bit_ripple_adder.v:22]
+INFO: [Synth 8-6157] synthesizing module 'six_bit_ripple_adder' [C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/six_bit_ripple_adder.v:22]
+INFO: [Synth 8-6157] synthesizing module 'FullAdder' [C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/full_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FullAdder' (0#1) [C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/full_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'six_bit_ripple_adder' (0#1) [C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/six_bit_ripple_adder.v:22]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1406.293 ; gain = 547.918
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1394.652 ; gain = 546.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1406.293 ; gain = 547.918
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1394.652 ; gain = 546.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1406.293 ; gain = 547.918
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1394.652 ; gain = 546.816
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1406.293 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1394.652 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/adder.xdc]
-Finished Parsing XDC File [C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/adder.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/adder.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/six_bit_ripple_adder_propImpl.xdc].
+Parsing XDC File [C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/adder.xdc]
+Finished Parsing XDC File [C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/adder.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/adder.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/six_bit_ripple_adder_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/six_bit_ripple_adder_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1486.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1424.359 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1486.055 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1424.359 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -107,25 +108,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -143,37 +144,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -197,25 +198,25 @@ Report Cell Usage:
 |6     |OBUF |     8|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1424.359 ; gain = 576.523
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1486.055 ; gain = 547.918
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1486.055 ; gain = 627.680
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 1424.359 ; gain = 546.816
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1424.359 ; gain = 576.523
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1486.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1424.359 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1486.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1424.359 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: f5ae3bfe
 INFO: [Common 17-83] Releasing license: Synthesis
-23 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+23 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1486.055 ; gain = 1018.117
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1486.055 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1/six_bit_ripple_adder.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1424.359 ; gain = 965.863
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1424.359 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1/six_bit_ripple_adder.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file six_bit_ripple_adder_utilization_synth.rpt -pb six_bit_ripple_adder_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 19:02:19 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 16 15:36:53 2025...

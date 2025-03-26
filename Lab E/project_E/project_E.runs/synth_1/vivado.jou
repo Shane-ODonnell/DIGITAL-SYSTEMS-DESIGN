@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2023.2_AR000036317 (64-bit)
+# Vivado v2023.2 (64-bit)
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Mar  6 19:01:37 2025
-# Process ID: 3972
-# Current directory: C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1
+# Start of session at: Sun Mar 16 15:35:58 2025
+# Process ID: 9388
+# Current directory: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1
 # Command line: vivado.exe -log six_bit_ripple_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source six_bit_ripple_adder.tcl
-# Log file: C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1/six_bit_ripple_adder.vds
-# Journal file: C:/Users/SODONNE8/Documents/GitHub/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1\vivado.jou
-# Running On: TCD-CNH4NX2, OS: Windows, CPU Frequency: 3312 MHz, CPU Physical cores: 6, Host memory: 34187 MB
+# Log file: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1/six_bit_ripple_adder.vds
+# Journal file: C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Lab E/project_E/project_E.runs/synth_1\vivado.jou
+# Running On: ShanesDELL, OS: Windows, CPU Frequency: 1882 MHz, CPU Physical cores: 10, Host memory: 16782 MB
 #-----------------------------------------------------------
 source six_bit_ripple_adder.tcl -notrace

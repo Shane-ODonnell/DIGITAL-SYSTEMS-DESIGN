@@ -21,7 +21,6 @@ set_property PACKAGE_PIN W15 [get_ports {A[4]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {A[4]}]
 set_property PACKAGE_PIN V15 [get_ports {A[5]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {A[5]}]
-	
 set_property PACKAGE_PIN W14 [get_ports {B[0]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {B[0]}]
 set_property PACKAGE_PIN W13 [get_ports {B[1]}]					
@@ -34,18 +33,12 @@ set_property PACKAGE_PIN T2 [get_ports {B[4]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {B[4]}]
 set_property PACKAGE_PIN R3 [get_ports {B[5]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {B[5]}]
-	
-#set_property PACKAGE_PIN W2 [get_ports {fxn[0]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {fxn[0]}]
-#set_property PACKAGE_PIN U1 [get_ports {sw[13]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {sw[13]}]
-#set_property PACKAGE_PIN T1 [get_ports {sw[14]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {sw[14]}]
-#set_property PACKAGE_PIN R2 [get_ports {sw[15]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {sw[15]}]
- 
-
-## LEDs
+set_property PACKAGE_PIN W2 [get_ports {fxn[0]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {fxn[0]}]
+set_property PACKAGE_PIN U1 [get_ports {fxn[1]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {fxn[1]}]
+set_property PACKAGE_PIN T1 [get_ports {fxn[2]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {fxn[2]}]
 set_property PACKAGE_PIN U16 [get_ports {X[0]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {X[0]}]
 set_property PACKAGE_PIN E19 [get_ports {X[1]}]					
@@ -58,14 +51,12 @@ set_property PACKAGE_PIN W18 [get_ports {X[4]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {X[4]}]
 set_property PACKAGE_PIN U15 [get_ports {X[5]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {X[5]}]
-	
     #set_property PACKAGE_PIN T14 [get_ports {overflow}]; # LED7
     
-set_property PACKAGE_PIN U14 [get_ports {c_out}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {c_out}]
-#
-set_property PACKAGE_PIN V14 [get_ports {overflow}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {overflow}]
+#set_property PACKAGE_PIN U14 [get_ports {c_out}]					
+	#set_property IOSTANDARD LVCMOS33 [get_ports {c_out}]
+#set_property PACKAGE_PIN V14 [get_ports {overflow}]					
+	#set_property IOSTANDARD LVCMOS33 [get_ports {overflow}]
 #set_property PACKAGE_PIN V13 [get_ports {led[8]}]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports {led[8]}]
 #set_property PACKAGE_PIN V3 [get_ports {led[9]}]					
@@ -114,17 +105,18 @@ set_property PACKAGE_PIN V14 [get_ports {overflow}]
 
 
 ##Buttonst
-set_property PACKAGE_PIN U18 [get_ports {fxn[0]}]  ; # BTNC					
-	set_property IOSTANDARD LVCMOS33 [get_ports {fxn[0]}]
-set_property PACKAGE_PIN T18 [get_ports {fxn[1]}]  ; # BTNU				
-	set_property IOSTANDARD LVCMOS33 [get_ports {fxn[1]}]
+#set_property PACKAGE_PIN U18 [get_ports btnC]						
+	#set_property IOSTANDARD LVCMOS33 [get_ports btnC]
+#set_property PACKAGE_PIN T18 [get_ports btnU]						
+	#set_property IOSTANDARD LVCMOS33 [get_ports btnU]
 #set_property PACKAGE_PIN W19 [get_ports btnL]						
 	#set_property IOSTANDARD LVCMOS33 [get_ports btnL]
 #set_property PACKAGE_PIN T17 [get_ports btnR]						
 	#set_property IOSTANDARD LVCMOS33 [get_ports btnR]
-set_property PACKAGE_PIN U17 [get_ports {fxn[2]}]  ; # BTND						
-	set_property IOSTANDARD LVCMOS33 [get_ports {fxn[2]}]
+#set_property PACKAGE_PIN U17 [get_ports btnD]						
+	#set_property IOSTANDARD LVCMOS33 [get_ports btnD]
  
+
 
 ##Pmod Header JA
 ##Sch name = JA1
@@ -297,3 +289,4 @@ set_property PACKAGE_PIN U17 [get_ports {fxn[2]}]  ; # BTND
 	#set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[3]}]
 #set_property PACKAGE_PIN K19 [get_ports QspiCSn]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports QspiCSn]
+
