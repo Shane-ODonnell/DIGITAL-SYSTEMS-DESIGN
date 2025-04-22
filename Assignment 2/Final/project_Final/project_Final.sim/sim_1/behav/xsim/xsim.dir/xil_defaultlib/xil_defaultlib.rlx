@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 2/Final/project_Final/project_Final.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 2/Final/project_Final/project_Final.srcs/sim_1/new/tb_top_module.v,1743987013,verilog,,,,tb_top_module,,,,,,,,
+C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 2/Final/project_Final/project_Final.srcs/sources_1/new/FSM.v,1743980009,verilog,,C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 2/Final/project_Final/project_Final.srcs/sources_1/new/LFSR.v,,FSM,,,,,,,,
+C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 2/Final/project_Final/project_Final.srcs/sources_1/new/LFSR.v,1743979790,verilog,,C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 2/Final/project_Final/project_Final.srcs/sources_1/new/counter.v,,lfsr,,,,,,,,
+C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 2/Final/project_Final/project_Final.srcs/sources_1/new/counter.v,1743980032,verilog,,C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 2/Final/project_Final/project_Final.srcs/sources_1/new/top_module.v,,counter,,,,,,,,
+C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 2/Final/project_Final/project_Final.srcs/sources_1/new/top_module.v,1743981615,verilog,,C:/Users/shane/Documents/DIGITAL-SYSTEMS-DESIGN/Assignment 2/Final/project_Final/project_Final.srcs/sim_1/new/tb_top_module.v,,top_module,,,,,,,,
